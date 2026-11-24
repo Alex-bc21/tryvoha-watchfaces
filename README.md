@@ -1,5 +1,23 @@
 # Тривога поруч — циферблаты Wear OS
 
+<!-- download-and-share -->
+Tryvoha Poruch: Emerald Vault, Obsidian Prism and Sapphire Flow watch faces for Wear OS 6, built with Watch Face Format 4.
+
+### Скачать и установить
+
+- **[EmeraldVaultWatchFace-1.3.0.apk](https://github.com/Alex-bc21/tryvoha-watchfaces/releases/download/v1.3.0/EmeraldVaultWatchFace-1.3.0.apk)**
+- **[ObsidianPrismWatchFace-1.2.0.apk](https://github.com/Alex-bc21/tryvoha-watchfaces/releases/download/v1.3.0/ObsidianPrismWatchFace-1.2.0.apk)**
+- **[SapphireFlowWatchFace-1.2.0.apk](https://github.com/Alex-bc21/tryvoha-watchfaces/releases/download/v1.3.0/SapphireFlowWatchFace-1.2.0.apk)**
+
+[Полные исходники](https://github.com/Alex-bc21/tryvoha-watchfaces/releases/download/v1.3.0/WatchFaces-1.3.0-source.zip) · [Все версии и контрольные суммы](https://github.com/Alex-bc21/tryvoha-watchfaces/releases)
+
+APK предназначены для часов Wear OS 6, не для телефона. Способ установки и отдельный поставщик статуса тревоги описаны ниже.
+
+Это предварительные версии для ознакомления и тестирования. Для скачивания публичных файлов регистрация на GitHub не нужна.
+
+**Поделиться:** отправьте [ссылку на этот проект](https://github.com/Alex-bc21/tryvoha-watchfaces) — здесь будут актуальное описание и ссылки на версии. [Сообщить об ошибке](https://github.com/Alex-bc21/tryvoha-watchfaces/issues).
+<!-- /download-and-share -->
+
 Три циферблата с разными оформлением и пакетами:
 
 - Emerald Vault 1.3.0 — com.emeraldvault.watchface.
@@ -19,3 +37,4 @@
 На подключённых часах: `adb install -r EmeraldVaultWatchFace-1.3.0.apk`, затем выберите циферблат в настройках часов. Можно установить все три независимо.
 
 Проверены подписи оригинальных APK, версии, ZIP и компиляция ресурсов каждого проекта. Работа анимаций, AOD и статусов на физических часах при этой публикации не проверялась. [Руководство](USER-GUIDE.md), [данные](PRIVACY.md), [проверка](VERIFICATION.md). Лицензии шрифтов сохранены в docs внутри проекта.
+
