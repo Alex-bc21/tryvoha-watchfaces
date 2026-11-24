@@ -1,2 +1,21 @@
-# tryvoha-watchfaces
-Тривога поруч — Emerald Vault, Obsidian Prism и Sapphire Flow для Wear OS 6. APK и исходники WFF.
+# Тривога поруч — циферблаты Wear OS
+
+Три циферблата с разными оформлением и пакетами:
+
+- Emerald Vault 1.3.0 — com.emeraldvault.watchface.
+- Obsidian Prism 1.2.0 — com.obsidianprism.watchface.
+- Sapphire Flow 1.2.0 — com.sapphireflow.watchface.
+
+[Скачать все APK и исходники](https://github.com/Alex-bc21/tryvoha-watchfaces/releases/tag/v1.3.0).
+
+Предварительная архивная подборка: Watch Face Format 4, **Wear OS 6 / API 36**. Эти APK предназначены для часов, а не телефона. Это восстановленные версии сентября 2026 года; более поздняя подготовленная Play-сборка 1.4.0 в подборку не входит.
+
+Для точки тревоги на часах нужен отдельный поставщик `com.sasha.tryvohaporuch/.complication.AlarmComplicationService`. Его APK не включён. Исходники поставщика находятся в модуле wear [проекта виджета](https://github.com/Alex-bc21/tryvoha-poruch-android). Установка только циферблата не создаёт службу получения статуса тревоги. Индикатор не заменяет официальное оповещение.
+
+## Сборка и установка
+
+`WatchFaces-1.3.0-source.zip` содержит все три проекта, графику и лицензии шрифтов. Нужны Android SDK Platform 36, Build Tools 36.0.0, JDK и Bash. Задайте ANDROID_SDK_ROOT и выполните `bash build-all-apks.sh`. Оригинальный ключ не включён: скрипт создаст ваш локальный ключ. APK с иной подписью не обновит оригинальный поверх установленного.
+
+На подключённых часах: `adb install -r EmeraldVaultWatchFace-1.3.0.apk`, затем выберите циферблат в настройках часов. Можно установить все три независимо.
+
+Проверены подписи оригинальных APK, версии, ZIP и компиляция ресурсов каждого проекта. Работа анимаций, AOD и статусов на физических часах при этой публикации не проверялась. [Руководство](USER-GUIDE.md), [данные](PRIVACY.md), [проверка](VERIFICATION.md). Лицензии шрифтов сохранены в docs внутри проекта.
